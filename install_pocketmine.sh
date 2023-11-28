@@ -78,7 +78,7 @@ case $linux_mode in
                 wget https://github.com/pmmp/PocketMine-MP/releases/latest/download/PocketMine-MP.phar && wget https://github.com/pmmp/PocketMine-MP/releases/latest/download/start.sh && echo "Downloads complete."
 
                 echo "Downloading php8-aarch64"
-                wget https://github.com/TukangM/php8-aarch64-builds/releases/download/php8.1.24/php-compiled-for-Linux_arm64_P5.zip && sudo apt install unzip && unzip php-compiled-for-Linux_arm64_P5.zip -d /home/$USER/pocketmine && echo "PHP downloaded and extracted."
+                wget https://github.com/TukangM/php8-aarch64-builds/releases/download/php8.1.24/php-compiled-for-Linux_arm64_P5.zip && sudo apt install unzip zip tar && unzip php-compiled-for-Linux_arm64_P5.zip -d /home/$USER/pocketmine && echo "PHP downloaded and extracted."
 
                 echo "Process done. You can start your PocketMine-MP server with your arm64 CPU with bash start.sh [exit]"
                 ;;
@@ -96,8 +96,7 @@ case $linux_mode in
                 wget https://github.com/pmmp/PocketMine-MP/releases/latest/download/PocketMine-MP.phar && wget https://github.com/pmmp/PocketMine-MP/releases/latest/download/start.sh && echo "Downloads complete."
 
                 echo "Downloading php8-aarch64"
-                wget https://github.com/TukangM/php8-aarch64-builds/releases/download/php8.1.24/php-compiled-for-Linux_arm64_P5.zip && sudo apt install unzip && unzip php-compiled-for-Linux_arm64_P5.zip -d /home/$USER/pocketmine && echo "PHP downloaded and extracted."
-
+                wget https://github.com/pmmp/PHP-Binaries/releases/latest/download/PHP-Linux-x86_64-PM5.tar.gz && sudo apt install tar zip unzip && tar -zxvf PHP-Linux-x86_64-PM5.tar.gz -C /home/$USER/pocketmine && echo "PHP downloaded and extracted."
                 echo "Process done. You can start your PocketMine-MP server with your arm64 CPU with bash start.sh [exit]"
                 ;;
             *)
